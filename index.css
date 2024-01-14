@@ -1,0 +1,82 @@
+/* globel rulse  */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+}
+body {
+}
+.container {
+  width: 1200px;
+  margin: auto;
+  /* علشان العناصر تيجي في النص  */
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* end globel rulse  */
+/* Start nav bar  */
+.nav-bar {
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+}
+.nav-bar .brand {
+  float: left;
+  width: 40%;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.nav-bar .links {
+  float: left;
+  width: 60%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.nav-bar .links li {
+  display: inline-block;
+  padding: 10px 15px;
+  /* text-transform: uppercase;  */
+  border-bottom: 2px solid transparent;
+}
+.nav-bar .links li.active,
+.nav-bar .links li:hover {
+  color: #1abc9c;
+  border-bottom: 2px solid #1abc9c;
+  transition: 0.5s;
+}
+.bar {
+  display: none;
+}
+/* End nav bar  */
+/* Start my framwork */
+.clearfix {
+  clear: both;
+}
+@media (max-width: 1000px) {
+.links{
+    display: none;
+}    
+.bar {
+    display: block;
+    margin: 2rem;
+  }
+  .bar-icon{
+    float: right;
+    padding: 0.5rem;
+  }
+  .icon-x{ display: none;}
+  .bar-links{
+    display: none;
+  }
+  .nav-bar {
+    margin: 1rem;
+    background-color: transparent;
+  }
+
+}
+/* end my framwork */
